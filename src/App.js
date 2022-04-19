@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Pages from "./pages/Pages";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Hello World</h1>
+        {/*we render pages to avoid rendering each individual page, because we will add routing later*/}
+        {/*always render to see results*/}
+        {/*Pages will have all the pages, eg Home, search items, etc*/}
+        <Pages />
     </div>
   );
 }
 
 export default App;
+
